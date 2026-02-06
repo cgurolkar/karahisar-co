@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Frijole&family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("https://use.typekit.net/xyn3ecx.css");
+:root {
+  --color-color-1: #af4e6a;
+  --color-color-2: #b48492;
+  --color-color-3: #a40c37;
+  --color-color-4: #4d0016;
+  --color-color-5: #f2e3e7;
+  --color-primary: #2d94cf;
+  --color-secondary: #2f4a63;
+  --color-third: #976b96;
+  --color-light: #afd6f9;
+  --color-dark: #0f1a24;
+  --color-primary1: #87bba2;
+  --color-secondary1: #55828b;
+  --color-third1: #3b6064;
+  --color-light1: #55828b;
+  --color-dark1: #364958;
+}
+
+@media screen and (max-width: 900px) {
+  .projects {
+    padding: 1rem;
+  }
+  .projects .texts1 h2 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .projects .texts1 p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+  .projects .pro-images {
+    width: 100%;
+    height: 50%;
+    padding: 1rem 2rem;
+  }
+  .projects .pro-images .photo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+  }
+  .projects .pro-images .photo-container figure {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+  .projects .pro-images .photo-container figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .projects .pro-images .photo-container figure:hover {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60%;
+            flex: 1 1 60%;
+  }
+  .fa-arrow-turn-up {
+    font-size: 1.2rem;
+  }
+  #project9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 1;
+    grid-row: 11 /12;
+  }
+  #project9 .project9-text {
+    padding: 0 2rem;
+  }
+  #project9 .project9-text ol li {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #project9 .project9-text ol li {
+    font-size: 0.75rem;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
