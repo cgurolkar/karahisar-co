@@ -222,7 +222,7 @@ export default function HomePage() {
               <CardContent className="p-8 text-center">
                 <div className="mb-6 rounded-lg bg-black p-4 shadow-sm flex justify-center items-center min-h-[88px]">
                   <img
-                    src="/logos/igkfast-logo.svg"
+                    src="/logos/igkfast-logo-591.png"
                     alt="IGKfast"
                     className="h-14 mx-auto object-contain"
                   />
