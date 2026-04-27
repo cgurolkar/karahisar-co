@@ -112,7 +112,7 @@ export default function AboutPage() {
             <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 flex flex-col items-center text-center">
               <div className="mb-4 rounded-lg bg-black p-4 shadow-sm w-full flex justify-center items-center min-h-[72px]">
                 <img
-                  src="/logos/igkfast-logo.svg"
+                  src="/logos/igkfast-logo-591.png"
                   alt="IGKfast"
                   className="h-10 w-auto object-contain"
                 />
