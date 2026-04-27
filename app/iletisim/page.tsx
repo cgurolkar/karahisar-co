@@ -382,7 +382,7 @@ export default function ContactPage() {
               <CardContent className="p-6">
                 <h3 className="font-bold mb-2 text-white">Hangi bölgelerde hizmet veriyorsunuz?</h3>
                 <p className="text-white/80">
-                  Başta İstanbul olmak üzere, Türkiye'nin birçok ilinde projeler gerçekleştiriyoruz. Detaylı bilgi için
+                  Başta Ankara olmak üzere, Türkiye'nin birçok ilinde projeler gerçekleştiriyoruz. Detaylı bilgi için
                   bizimle iletişime geçebilirsiniz.
                 </p>
               </CardContent>

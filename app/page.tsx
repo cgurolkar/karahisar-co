@@ -279,7 +279,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold mb-3">Banyolia</h3>
                 <p className="text-muted-foreground text-sm mb-4">Modern banyo çözümleri ve aksesuarlar</p>
                 <a 
-                  href="https://www.banyolia.com.tr" 
+                  href="https://banyolia.com.tr" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

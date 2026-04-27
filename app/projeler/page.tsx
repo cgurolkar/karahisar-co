@@ -3,81 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { NewsletterForm } from "@/components/newsletter-form"
 import Link from "next/link"
-
-const projects = [
-  {
-    id: 1,
-    title: "Çorum Ortaköy Belediyesi Spor Kompleksi Yapım İşi",
-    location: "Ortaköy, Çorum",
-    image: "/projects/corum/_GUR4290.jpg",
-    description: "Nizami Sentetik Çim Yüzeyli (Fifa Quality Belgeli) Futbol Sahası, Prefabrik Soyunma Odası Ve 480 Kişilik Portatif Çelik Tribün, Gençlik Merkezi İle Basketbol-Voleybol Sahası İnşaat Yapım İşi. İnşaat İmalatları halen devam etmekte olup 2022 Temmuz ayında teslim edilecektir.",
-    year: "2021-2022",
-    category: "Spor Kompleksi",
-  },
-  {
-    id: 2,
-    title: "Gölbaşı Öğrenci Yurdu Havuz ve Çevre Düzenleme İşi",
-    location: "Gölbaşı, Ankara",
-    image: "/projects/golbasi/IMG_2180-1.jpg",
-    description: "Ankara'nın Gölbaşı ilçesinde bitmiş durumdaki bir erkek öğrenci yurduna ek bina olarak tasarlanan kapalı havuz ve yurt binasının çevre düzenleme işleri yapılmıştır. İş kapsamında havuz kazı, seramik, yalıtım işleri havuzun üstünün kapanması ve ince işleri yapılmıştır. Çevre Düzenlemesi işinde çevre duvarları, saha betonları ve kaplama işlerinin yanısıra bordür ve tretuar işleri de yapılmıştır.",
-    year: "2017",
-    category: "Çevre Düzenleme",
-  },
-  {
-    id: 3,
-    title: "Ankara AnkaPark Otorobot Binası Kaba İnşaat İmalatları",
-    location: "AnkaPark, Ankara",
-    image: "/projects/anka/IMG_0466.JPG",
-    description: "Ankara'nın eğlence parkı olarak da tasarlanan AnkaPark(Wonderland) içerisinde yer alan Otorobot binasının kazı işleri, temel yalıtım ve kaba inşaat imalatlarının tamamı firmamız tarafından yapılmıştır.",
-    year: "2015-2016",
-    category: "Kaba İnşaat",
-  },
-  {
-    id: 4,
-    title: "Ankara Çankaya Park Caddesi Müstakil Villa İnşaatı",
-    location: "Çayyolu, Ankara",
-    image: "/projects/park/NIKON D8007751-1.jpg",
-    description: "500 m² arsa üzerine toplamda 300 m² inşaat alanı olarak projelendirilen villa binasının hafriyat işlerinden çatısına, çevre düzenlemesinden ince işlerine kadar tüm imalatları yapılmıştır.",
-    year: "2014",
-    category: "Müstakil Villa",
-  },
-  {
-    id: 5,
-    title: "Antalya Side-Manavgat 5* Tatil Köyü İnşaatı",
-    location: "Side, Antalya",
-    image: "/projects/side1/Hewlett-Packard hp photosmart 720_20030821_142621.jpg",
-    description: "Antalya Manavgat ilçesinin tatil beldesi olan Side'de 7 blok üzerine kurulu 20.000 m² inşaat alanı olan 5 yıldızlı tatil köyü kompleksinin tüm kaba ve ince-kaba imalatları 4 ay gibi kısa sürede bitirilmiştir.",
-    year: "2003-2004",
-    category: "Otel İnşaatı",
-  },
-  {
-    id: 6,
-    title: "Antalya Side-Manavgat 5* Otel İnşaatı",
-    location: "Side, Antalya",
-    image: "/projects/side2/Hewlett-Packard hp photosmart 720_20040411_153304.jpg",
-    description: "Antalya Manavgat ilçesinin tatil beldesi olan Side'de 5 blok, lobi binası ve otoparkı olan 15.000 m² inşaat alanı olan 5 yıldızlı tatil köyü ve otel binalarının yapımı için düşünülen 5 aylık süre içinde tüm kaba ve ince-kaba imalatları yapılmıştır.",
-    year: "2004",
-    category: "Otel İnşaatı",
-  },
-  {
-    id: 7,
-    title: "Muhtelif Yerlerde Daire İç Tasarım Tadilat ve Onarım İşi",
-    location: "Ankara",
-    image: "/projects/interior/IMG_2139.JPG",
-    description: "Muhtelif sayıda, her türlü daire iç mimari ve tadilat işleri ile birlikte tüm dekorasyon işleri (İsteğe Bağlı olarak), malzeme seçimleri, projelendirme işleri de tamamlanarak yapılmıştır.",
-    year: "2009-2018",
-    category: "İç Mimari",
-  },
-  {
-    id: 8,
-    title: "Ankara İncek Villa Sitesi ve Havuz Yapım İşi",
-    location: "İncek, Ankara",
-    image: "/projects/incek/NIKON D80011038.jpg",
-    description: "Türkiye'nin bir çok ilinde çok sayıda Statik(Betonarme) ve Mimari projeler üretilmiştir. Projenin tüm yönetmelik ve kanunlara uygun şekilde üretilerek yapı ruhsatı işlemleri yapılmaktadır.",
-    year: "2009-2018",
-    category: "Villa Sitesi",
-  },
-]
+import { projects } from "@/lib/projects-data"
 
 // Orijinal sitedeki tam proje listesi (PROJELERİMİZ bölümü)
 const fullProjectList = [
@@ -161,9 +87,11 @@ export default function ProjectsPage() {
 
                   <p className="text-gray-600 text-pretty mb-6 leading-relaxed line-clamp-3">{project.description}</p>
 
-                  <Button className="bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold px-6 py-2 rounded-none uppercase tracking-wide">
-                    DETAYLAR
-                  </Button>
+                  <Link href={`/projeler/${project.slug}`}>
+                    <Button className="bg-yellow-500 hover:bg-yellow-600 text-slate-900 font-semibold px-6 py-2 rounded-none uppercase tracking-wide">
+                      DETAYLAR
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
