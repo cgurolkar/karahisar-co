@@ -224,7 +224,7 @@ export default function HomePage() {
                   <img
                     src="/logos/igkfast-logo-591.png"
                     alt="IGKfast"
-                    className="h-14 mx-auto object-contain"
+                    className="h-14 mx-auto object-fill"
                   />
                 </div>
                 <Badge className="mb-3 bg-primary text-primary-foreground">Teknoloji & Yazılım</Badge>
