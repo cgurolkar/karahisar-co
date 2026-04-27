@@ -54,7 +54,7 @@ export function IgkfastAnnouncementPopup() {
         <div className="p-8 pt-10 text-center">
           <div className="mb-6 flex justify-center rounded-lg bg-black px-6 py-5">
             <img
-              src="/logos/igkfast-logo.png"
+              src="/logos/igkfast-logo.svg"
               alt="IGKfast"
               className="h-12 w-auto max-w-full object-contain"
             />

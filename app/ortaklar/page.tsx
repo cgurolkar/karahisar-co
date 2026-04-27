@@ -12,7 +12,7 @@ const sisterCompanies = [
     id: 1,
     name: "IGKfast",
     category: "Teknoloji & Yazılım",
-    logo: "/logos/igkfast-logo.png",
+    logo: "/logos/igkfast-logo.svg",
     url: "https://igkfast.com",
     description: "Yazılım geliştirme, web tasarımı ve dijital tasarım çözümleri sunan teknoloji firmamız. Modern web uygulamaları, mobil çözümler ve kurumsal yazılım projeleri geliştirmektedir.",
     established: "Teknoloji grubu",
