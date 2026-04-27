@@ -276,8 +276,8 @@ export default function BlogPage() {
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              <a href="https://www.igksoft.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
-                IGKSoft
+              <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
+                IGKfast
               </a>
               {" "}@ Karahisarlıoğlu Yapı Tasarım Markasıdır
               <br />

@@ -220,18 +220,21 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 border-primary/20">
               <CardContent className="p-8 text-center">
-                <div className="mb-6 bg-white rounded-lg p-4 shadow-sm">
+                <div className="mb-6 rounded-lg bg-black p-4 shadow-sm flex justify-center items-center min-h-[88px]">
                   <img
-                    src="/logos/igksoft-logo.png"
-                    alt="IGK Soft"
-                    className="h-16 mx-auto object-contain"
+                    src="/logos/igkfast-logo.png"
+                    alt="IGKfast"
+                    className="h-14 mx-auto object-contain"
                   />
                 </div>
                 <Badge className="mb-3 bg-primary text-primary-foreground">Teknoloji & Yazılım</Badge>
-                <h3 className="text-xl font-bold mb-3">IGK Soft</h3>
+                <h3 className="text-xl font-bold mb-3">
+                  <span className="font-bold">IGK</span>
+                  <span className="italic font-semibold">fast</span>
+                </h3>
                 <p className="text-muted-foreground text-sm mb-4">Yazılım geliştirme, web tasarımı ve dijital çözümler</p>
                 <a 
-                  href="https://www.igksoft.com.tr" 
+                  href="https://igkfast.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
@@ -785,8 +788,8 @@ export default function HomePage() {
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              <a href="https://www.igksoft.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
-                IGKSoft
+              <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
+                IGKfast
               </a>
               {" "}@ Karahisarlıoğlu Yapı Tasarım Markasıdır
               <br />

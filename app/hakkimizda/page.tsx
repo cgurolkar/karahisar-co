@@ -96,7 +96,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Grup Şirketlerimiz - IGK Soft & IGK Yapı */}
+      {/* Grup Şirketlerimiz - IGKfast & IGK Yapı */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -110,16 +110,21 @@ export default function AboutPage() {
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 flex flex-col items-center text-center">
-              <div className="mb-4 bg-white rounded-lg p-4 shadow-sm w-full flex justify-center">
+              <div className="mb-4 rounded-lg bg-black p-4 shadow-sm w-full flex justify-center items-center min-h-[72px]">
                 <img
-                  src="/logos/igksoft-logo.png"
-                  alt="IGK Soft"
-                  className="h-12 w-auto object-contain"
+                  src="/logos/igkfast-logo.png"
+                  alt="IGKfast"
+                  className="h-10 w-auto object-contain"
                 />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">IGK Soft</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                <span className="font-bold">IGK</span>
+                <span className="italic font-semibold">fast</span>
+              </h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Teknoloji ve yazılım alanında faaliyet gösteren grup şirketimizdir. E-ticaret SaaS platformu, kurumsal yazılım, web uygulamaları ve dijital dönüşüm çözümleri sunmaktadır. İşletmelerin dijitalleşme süreçlerinde güvenilir ortağıdır.
+                Teknoloji ve yazılım alanında faaliyet gösteren grup şirketimizdir. IGKfast e-ticaret SaaS platformu,
+                kurumsal yazılım, web uygulamaları ve dijital dönüşüm çözümleri sunmaktadır. İşletmelerin dijitalleşme
+                süreçlerinde güvenilir ortağıdır.
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-8 border border-gray-100 flex flex-col items-center text-center">
@@ -358,8 +363,8 @@ export default function AboutPage() {
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              <a href="https://www.igksoft.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
-                IGKSoft
+              <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
+                IGKfast
               </a>
               {" "}@ Karahisarlıoğlu Yapı Tasarım Markasıdır
               <br />

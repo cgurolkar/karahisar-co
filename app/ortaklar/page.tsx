@@ -10,10 +10,10 @@ import Link from "next/link"
 const sisterCompanies = [
   {
     id: 1,
-    name: "IGK Soft",
+    name: "IGKfast",
     category: "Teknoloji & Yazılım",
-    logo: "/logos/igksoft-logo.png",
-    url: "https://www.igksoft.com.tr",
+    logo: "/logos/igkfast-logo.png",
+    url: "https://igkfast.com",
     description: "Yazılım geliştirme, web tasarımı ve dijital tasarım çözümleri sunan teknoloji firmamız. Modern web uygulamaları, mobil çözümler ve kurumsal yazılım projeleri geliştirmektedir.",
     established: "Teknoloji grubu",
   },
@@ -246,7 +246,11 @@ export default function PartnersPage() {
             {sisterCompanies.map((company) => (
               <Card key={company.id} className="group hover:shadow-2xl transition-all duration-300 border-2 border-accent/20 hover:border-accent/50">
                 <CardContent className="p-8 text-center">
-                  <div className="mb-6 bg-white rounded-lg p-4 shadow-sm">
+                  <div
+                    className={`mb-6 rounded-lg p-4 shadow-sm flex items-center justify-center min-h-[104px] ${
+                      company.id === 1 ? "bg-black" : "bg-white"
+                    }`}
+                  >
                     <img
                       src={company.logo || "/placeholder.svg"}
                       alt={company.name}
@@ -465,8 +469,8 @@ export default function PartnersPage() {
 
           <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              <a href="https://www.igksoft.com.tr" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                IGKSoft
+              <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                IGKfast
               </a>
               {" "}@ Karahisarlıoğlu Yapı Tasarım Markasıdır
               <br />
