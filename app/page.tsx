@@ -220,7 +220,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <Card className="group hover:shadow-xl transition-all duration-300 border-2 border-primary/20">
               <CardContent className="p-8 text-center">
-                <div className="mb-6 rounded-lg bg-black p-4 shadow-sm flex justify-center items-center min-h-[88px]">
+                <div className="mb-6 rounded-lg bg-white p-4 shadow-sm flex justify-center items-center min-h-[88px]">
                   <img
                     src="/logos/igkfast-logo-591.png"
                     alt="IGKfast"
