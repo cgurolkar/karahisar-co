@@ -81,14 +81,76 @@ export default async function ProjectDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <footer className="bg-slate-900 py-12">
+      <footer className="bg-slate-900 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center">
-              <img src="/kara-logo-2.png" alt="Karahisarlıoğlu Yapı" className="h-10 w-auto" />
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center mb-4">
+                <img src="/kara-logo-2.png" alt="Karahisarlıoğlu Yapı" className="h-12 w-auto" />
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                35 yıllık deneyim ve 5 yıllık firma geçmişimizle, inşaat sektöründe güvenilir ve kaliteli hizmet sunuyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla projelerinizi hayata geçiriyoruz.
+              </p>
             </div>
-            <div className="text-gray-400 text-sm text-center md:text-right">
-              <p>© Karahisarlıoğlu Yapı Tasarım Ltd.Şti</p>
+
+            <div>
+              <h4 className="text-white font-semibold mb-4">İletişim</h4>
+              <div className="space-y-2 text-sm text-gray-400">
+                <p>📞 +90 532 743 41 33</p>
+                <p>📧 info@karahisarliogluyapi.com.tr</p>
+                <p>📍 İlkbahar Mahallesi Güneypark Kümeevler Sinpaş Altınoran Çarşı 19/B -2. Bodrum Katı No:31 Çankaya/ANKARA</p>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-white font-semibold mb-4">Şirket</h4>
+              <div className="space-y-2 text-sm">
+                <Link href="/hakkimizda" className="text-gray-400 hover:text-white block transition-colors">
+                  HAKKIMIZDA
+                </Link>
+                <Link href="/projeler" className="text-gray-400 hover:text-white block transition-colors">
+                  HİZMETLER
+                </Link>
+                <Link href="/projeler" className="text-gray-400 hover:text-white block transition-colors">
+                  PROJELER
+                </Link>
+                <Link href="/blog" className="text-gray-400 hover:text-white block transition-colors">
+                  BLOG
+                </Link>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-white font-semibold mb-4">Haberlerimize Abone Olun</h4>
+              <p className="text-gray-400 text-sm mb-4">
+                Projelerimiz ve yeniliklerimiz hakkında güncel bilgileri almak için abone olun
+              </p>
+              <NewsletterForm />
+            </div>
+          </div>
+
+          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer" className="hover:text-teal-400 transition-colors">
+                IGKfast
+              </a>
+              {" "}@ Karahisarlıoğlu Yapı Tasarım Markasıdır
+              <br />
+              © Karahisarlıoğlu Yapı Tasarım Ltd.Şti
+            </p>
+            <div className="flex space-x-4 mt-4 md:mt-0">
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                <span className="text-slate-900 font-bold text-sm">f</span>
+              </div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                <span className="text-slate-900 font-bold text-sm">t</span>
+              </div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                <span className="text-slate-900 font-bold text-sm">in</span>
+              </div>
+              <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center">
+                <span className="text-slate-900 font-bold text-sm">@</span>
+              </div>
             </div>
           </div>
         </div>

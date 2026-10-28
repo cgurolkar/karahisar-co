@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
-import { NewsletterForm } from "@/components/newsletter-form"
+import { SiteFooter } from "@/components/site-footer"
 import { Phone, Mail, MapPin, User, Facebook, Instagram, Linkedin, Send } from "lucide-react"
 import Link from "next/link"
 import { useToast } from "@/hooks/use-toast"
@@ -39,14 +39,12 @@ const contactInfo = [
 ]
 
 const services = [
-  "Konut İnşaatı",
-  "Ticari Yapılar",
-  "Endüstriyel Tesisler",
-  "Mimari Tasarım",
-  "Proje Danışmanlığı",
-  "Yapı Denetimi",
-  "Tadilat ve Renovasyon",
-  "Peyzaj Düzenlemesi",
+  "Genel bilgi",
+  "IGKfast (e-ticaret SaaS)",
+  "IGK Yapı / Banyolia mağaza",
+  "İş birliği ve ortaklık",
+  "Referans / uygulama",
+  "Diğer",
 ]
 
 export default function ContactPage() {
@@ -110,32 +108,28 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[var(--surface)]">
       <Navigation />
 
-      <section className="pt-24 pb-16 bg-industrial-darker relative overflow-hidden">
-        {/* Background pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/construction-blueprint-pattern.png')] bg-cover bg-center"></div>
-        </div>
-
+      <section className="pt-28 pb-14 relative overflow-hidden border-b border-[var(--border-soft)]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--surface-tint)_0%,_transparent_55%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-white">
-            {/* Breadcrumbs */}
-            <div className="flex items-center text-sm text-white/70 mb-8">
-              <Link href="/" className="hover:text-white transition-colors">
-                Ana Sayfa
-              </Link>
-              <span className="mx-2">—</span>
-              <span className="text-white">İletişim</span>
-            </div>
-
-            <div className="mb-4 text-sm font-medium text-accent tracking-wider uppercase">İLETİŞİM</div>
-            <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6">İletişim</h1>
-            <p className="text-xl text-white/90 text-pretty max-w-3xl">
-              Hayalinizdeki projeyi gerçeğe dönüştürmek için bizimle iletişime geçin.
-            </p>
+          <div className="flex items-center text-sm text-[var(--ink-muted)] mb-6">
+            <Link href="/" className="hover:text-[var(--ink)] transition-colors">
+              Ana Sayfa
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-[var(--ink)]">İletişim</span>
           </div>
+          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--brand-warm)] mb-3">
+            İletişim
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] font-[family-name:var(--font-display)] mb-4">
+            Bize yazın
+          </h1>
+          <p className="text-lg text-[var(--ink-muted)] max-w-2xl">
+            IGKfast, mağaza veya genel iş birliği için formu doldurun; en kısa sürede dönüş yapalım.
+          </p>
         </div>
       </section>
 
@@ -229,13 +223,13 @@ export default function ContactPage() {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-medium mb-2">Hizmet Türü</label>
+                      <label className="block text-sm font-medium mb-2">Konu</label>
                       <select
                         value={form.service}
                         onChange={(e) => setForm((f) => ({ ...f, service: e.target.value }))}
                         className="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"
                       >
-                        <option value="">Hizmet türü seçin</option>
+                        <option value="">Konu seçin</option>
                         {services.map((service, index) => (
                           <option key={index} value={service}>
                             {service}
@@ -391,83 +385,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <footer className="bg-industrial-darker py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center mb-4">
-                <img src="/kara-logo-2.png" alt="Karahisarlıoğlu Yapı" className="h-12 w-auto" />
-              </div>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                35 yıllık deneyim ve 15 yıllık firma geçmişimizle, inşaat sektöründe güvenilir ve kaliteli hizmet sunuyoruz. Müşteri memnuniyeti odaklı yaklaşımımızla projelerinizi hayata geçiriyoruz.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="text-white font-semibold mb-4">İletişim</h4>
-              <div className="space-y-2 text-sm text-gray-400">
-                <p>📞 +90 532 743 41 33</p>
-                <p>📧 info@karahisarliogluyapi.com.tr</p>
-                <p>📍 {ADRES}</p>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-white font-semibold mb-4">Şirket</h4>
-              <div className="space-y-2 text-sm">
-                <Link href="/hakkimizda" className="text-gray-400 hover:text-white block transition-colors">
-                  HAKKIMIZDA
-                </Link>
-                <Link href="/projeler" className="text-gray-400 hover:text-white block transition-colors">
-                  PROJELER
-                </Link>
-                <Link href="/ortaklar" className="text-gray-400 hover:text-white block transition-colors">
-                  ORTAKLAR
-                </Link>
-                <Link href="/iletisim" className="text-gray-400 hover:text-white block transition-colors">
-                  İLETİŞİM
-                </Link>
-                <Link href="/blog" className="text-gray-400 hover:text-white block transition-colors">
-                  BLOG
-                </Link>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="text-white font-semibold mb-4">Haberlerimize Abone Olun</h4>
-              <p className="text-gray-400 text-sm mb-4">
-                Projelerimiz ve yeniliklerimiz hakkında güncel bilgileri almak için abone olun
-              </p>
-              <NewsletterForm />
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
-              <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-                IGKfast
-              </a>
-              {" "}@ Karahisarlıoğlu Yapı Tasarım Markasıdır
-              <br />
-              © Karahisarlıoğlu Yapı Tasarım Ltd.Şti
-            </p>
-            <div className="flex space-x-4 mt-4 md:mt-0">
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">f</span>
-              </div>
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">t</span>
-              </div>
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">in</span>
-              </div>
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">@</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
