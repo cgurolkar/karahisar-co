@@ -30,7 +30,7 @@ export default function HomePage() {
       <section className="relative min-h-[100svh] flex items-end overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/modern-construction-building-exterior.jpg')" }}
+          style={{ backgroundImage: "url('/hero-karahisarlioglu-1.jpg')" }}
           aria-hidden
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-[var(--ink)]/75 to-[var(--ink)]/35" />
@@ -42,11 +42,11 @@ export default function HomePage() {
               Karahisarlıoğlu Yapı Tasarım
             </p>
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight font-[family-name:var(--font-display)] text-balance leading-[1.05]">
-              Yazılım ve e-ticaret ekosistemi
+              Geleceği inşa ediyor, dijital dünyayı tasarlıyoruz
             </h1>
             <p className="mt-6 text-lg md:text-xl text-white/80 max-w-xl leading-relaxed">
-              IGKfast SaaS platformu ile IGK Yapı ve Banyolia mağazalarını aynı çatı altında
-              büyütüyoruz.
+              IGKfast SaaS, IGK Yapı ve Banyolia — 35 yıllık mühendislik disiplinini yazılım ve
+              e-ticaret ekosisteminde buluşturuyoruz.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link

@@ -2,171 +2,123 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Navigation } from "@/components/navigation"
 import { SiteFooter } from "@/components/site-footer"
+import { blogPosts, blogCategories } from "@/lib/blog-data"
 import { Calendar, Clock, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
+import type { Metadata } from "next"
 
-// Blog yazıları - Buraya yeni blog ekleyebilirsiniz
-const blogPosts = [
-  {
-    id: 1,
-    slug: "insaat-sektorunde-2025-trendleri",
-    title: "İnşaat Sektöründe 2025 Trendleri",
-    excerpt: "2025 yılında inşaat sektöründe bizi bekleyen yenilikler ve trendler. Sürdürülebilir yapı malzemeleri, akıllı binalar ve yeşil inşaat uygulamaları.",
-    content: "Blog içeriği buraya gelecek...",
-    image: "/projects/corum/_GUR4290.jpg",
-    category: "Sektör Haberleri",
-    author: "C.Gürol Karahisarlıoğlu",
-    date: "2025-01-15",
-    readTime: "5 dk",
-    featured: true,
-  },
-  {
-    id: 2,
-    slug: "dogru-insaat-firmasi-secimi",
-    title: "Doğru İnşaat Firması Nasıl Seçilir?",
-    excerpt: "İnşaat projeniz için doğru firmayı seçerken dikkat etmeniz gereken kriterler. Deneyim, referanslar ve kalite standartları.",
-    content: "Blog içeriği buraya gelecek...",
-    image: "/projects/anka/IMG_0466.JPG",
-    category: "Rehber",
-    author: "Karahisarlıoğlu Yapı",
-    date: "2025-01-10",
-    readTime: "7 dk",
-    featured: true,
-  },
-  {
-    id: 3,
-    slug: "modern-banyo-tasarimlari",
-    title: "2025'in Modern Banyo Tasarımları",
-    excerpt: "Modern banyo dekorasyonunda minimal tasarım, fonksiyonellik ve estetik bir arada. İşte en popüler banyo trendleri.",
-    content: "Blog içeriği buraya gelecek...",
-    image: "/projects/interior/IMG_2139.JPG",
-    category: "Tasarım",
-    author: "Karahisarlıoğlu Yapı",
-    date: "2025-01-05",
-    readTime: "6 dk",
-    featured: false,
-  },
-  {
-    id: 4,
-    slug: "insaat-proje-yonetimi",
-    title: "Başarılı İnşaat Proje Yönetimi İçin İpuçları",
-    excerpt: "İnşaat projelerinde zaman ve maliyet yönetimi, kalite kontrol ve risk yönetimi için pratik öneriler.",
-    content: "Blog içeriği buraya gelecek...",
-    image: "/projects/park/NIKON D8007751-1.jpg",
-    category: "Proje Yönetimi",
-    author: "C.Gürol Karahisarlıoğlu",
-    date: "2024-12-28",
-    readTime: "8 dk",
-    featured: false,
-  },
-]
-
-const categories = ["Tümü", "Sektör Haberleri", "Rehber", "Tasarım", "Proje Yönetimi"]
+export const metadata: Metadata = {
+  title: "Blog | Karahisarlıoğlu Yapı Tasarım",
+  description:
+    "IGKfast e-ticaret SaaS, banyo çözümleri ve dijital dönüşüm üzerine yazılar. Karahisarlıoğlu Yapı Tasarım blog.",
+}
 
 export default function BlogPage() {
-  const featuredPost = blogPosts.find(post => post.featured)
-  const otherPosts = blogPosts.filter(post => post.id !== featuredPost?.id)
+  const featuredPosts = blogPosts.filter((post) => post.featured)
+  const featuredPost = featuredPosts[0]
+  const otherPosts = blogPosts.filter((post) => post.id !== featuredPost?.id)
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[var(--surface)]">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-slate-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[url('/construction-blueprint-pattern.png')] bg-cover bg-center"></div>
-        </div>
-
+      <section className="pt-28 pb-14 relative overflow-hidden border-b border-[var(--border-soft)]">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--surface-tint)_0%,_transparent_55%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-white">
-            <div className="flex items-center text-sm text-white/70 mb-8">
-              <Link href="/" className="hover:text-white transition-colors">
-                Ana Sayfa
-              </Link>
-              <span className="mx-2">—</span>
-              <span className="text-white">Blog</span>
-            </div>
-
-            <div className="mb-4 text-sm font-medium text-teal-400 tracking-wider uppercase">BLOG & HABERLER</div>
-            <h1 className="text-4xl md:text-6xl font-bold text-balance mb-6">Blog</h1>
-            <p className="text-xl text-white/90 text-pretty max-w-3xl">
-              İnşaat sektöründeki yenilikler, projelerimiz ve uzman görüşleri
-            </p>
+          <div className="flex items-center text-sm text-[var(--ink-muted)] mb-6">
+            <Link href="/" className="hover:text-[var(--ink)] transition-colors">
+              Ana Sayfa
+            </Link>
+            <span className="mx-2">/</span>
+            <span className="text-[var(--ink)]">Blog</span>
           </div>
+          <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--brand-warm)] mb-3">
+            İçgörü & rehber
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] font-[family-name:var(--font-display)] max-w-3xl text-balance">
+            Blog
+          </h1>
+          <p className="mt-4 text-lg text-[var(--ink-muted)] max-w-2xl">
+            E-ticaret SaaS, banyo çözümleri ve dijital dönüşüm — markalarımız ve sektör için
+            uygulanabilir içerikler.
+          </p>
         </div>
       </section>
 
-      {/* Featured Post */}
       {featuredPost && (
-        <section className="py-16 bg-background">
+        <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-8">
-              <Badge className="bg-primary/10 text-primary border-primary/20">ÖNE ÇIKAN</Badge>
+              <Badge className="bg-[var(--brand-warm)]/15 text-[var(--ink)] border-[var(--brand-warm)]/30">
+                Öne çıkan
+              </Badge>
             </div>
-            
-            <Link href={`/blog/${featuredPost.slug}`}>
-              <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-primary/20">
-                <div className="grid lg:grid-cols-2 gap-0">
-                  <div className="aspect-[4/3] lg:aspect-auto overflow-hidden relative">
-                    <img
-                      src={featuredPost.image}
-                      alt={featuredPost.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
-                      {featuredPost.category}
-                    </Badge>
-                  </div>
-                  
-                  <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 group-hover:text-primary transition-colors">
-                      {featuredPost.title}
-                    </h2>
-                    <p className="text-muted-foreground text-pretty mb-6 leading-relaxed">
-                      {featuredPost.excerpt}
-                    </p>
-                    
-                    <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-6">
-                      <div className="flex items-center gap-2">
-                        <User className="h-4 w-4" />
-                        <span>{featuredPost.author}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar className="h-4 w-4" />
-                        <span>{new Date(featuredPost.date).toLocaleDateString('tr-TR')}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Clock className="h-4 w-4" />
-                        <span>{featuredPost.readTime} okuma</span>
-                      </div>
-                    </div>
 
-                    <div className="flex items-center text-primary font-semibold group-hover:gap-3 transition-all">
-                      Devamını Oku
-                      <ArrowRight className="h-5 w-5 ml-2 group-hover:ml-0 transition-all" />
-                    </div>
-                  </CardContent>
+            <Link href={`/blog/${featuredPost.slug}`} className="block group">
+              <div className="grid lg:grid-cols-2 gap-0 border border-[var(--border-soft)] overflow-hidden hover:border-[var(--brand-warm)] transition-colors">
+                <div className="aspect-[4/3] lg:aspect-auto lg:min-h-[360px] overflow-hidden relative bg-[var(--surface-elevated)]">
+                  <img
+                    src={featuredPost.image}
+                    alt={featuredPost.title}
+                    className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
+                  />
+                  <Badge className="absolute top-4 left-4 bg-[var(--ink)] text-white">
+                    {featuredPost.category}
+                  </Badge>
                 </div>
-              </Card>
+
+                <div className="p-8 lg:p-12 flex flex-col justify-center bg-[var(--surface)]">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[var(--ink)] font-[family-name:var(--font-display)] group-hover:text-[var(--brand-warm)] transition-colors text-balance">
+                    {featuredPost.title}
+                  </h2>
+                  <p className="text-[var(--ink-muted)] mb-6 leading-relaxed">
+                    {featuredPost.excerpt}
+                  </p>
+
+                  <div className="flex flex-wrap items-center gap-4 text-sm text-[var(--ink-muted)] mb-6">
+                    <div className="flex items-center gap-2">
+                      <User className="h-4 w-4" />
+                      <span>{featuredPost.author}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Calendar className="h-4 w-4" />
+                      <span>
+                        {new Date(featuredPost.date).toLocaleDateString("tr-TR", {
+                          day: "numeric",
+                          month: "long",
+                          year: "numeric",
+                        })}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Clock className="h-4 w-4" />
+                      <span>{featuredPost.readTime} okuma</span>
+                    </div>
+                  </div>
+
+                  <span className="inline-flex items-center text-[var(--ink)] font-semibold">
+                    Devamını oku
+                    <ArrowRight className="h-5 w-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </div>
             </Link>
           </div>
         </section>
       )}
 
-      {/* Other Posts */}
-      <section className="py-16 bg-secondary/5">
+      <section className="py-16 bg-[var(--surface-elevated)] border-t border-[var(--border-soft)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-12">
-            <h2 className="text-3xl font-bold">Tüm Yazılar</h2>
-            
-            {/* Categories Filter */}
-            <div className="hidden md:flex gap-2">
-              {categories.map((category) => (
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+            <h2 className="text-3xl font-bold text-[var(--ink)] font-[family-name:var(--font-display)]">
+              Tüm yazılar
+            </h2>
+            <div className="flex flex-wrap gap-2">
+              {blogCategories.map((category) => (
                 <Badge
                   key={category}
                   variant="outline"
-                  className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="border-[var(--border-soft)] text-[var(--ink-muted)]"
                 >
                   {category}
                 </Badge>
@@ -176,24 +128,24 @@ export default function BlogPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherPosts.map((post) => (
-              <Link key={post.id} href={`/blog/${post.slug}`}>
-                <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 h-full">
-                  <div className="aspect-[16/10] overflow-hidden relative">
+              <Link key={post.id} href={`/blog/${post.slug}`} className="block group h-full">
+                <Card className="overflow-hidden border-[var(--border-soft)] hover:border-[var(--brand-warm)] transition-colors h-full bg-[var(--surface)] shadow-none rounded-none">
+                  <div className="aspect-[16/10] overflow-hidden relative bg-[var(--surface-elevated)]">
                     <img
                       src={post.image}
                       alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                     />
-                    <Badge className="absolute top-4 left-4 bg-primary/90 text-primary-foreground">
+                    <Badge className="absolute top-4 left-4 bg-[var(--ink)]/90 text-white">
                       {post.category}
                     </Badge>
                   </div>
-                  
+
                   <CardContent className="p-6">
-                    <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                    <div className="flex items-center gap-3 text-xs text-[var(--ink-muted)] mb-3">
                       <div className="flex items-center gap-1">
                         <Calendar className="h-3 w-3" />
-                        <span>{new Date(post.date).toLocaleDateString('tr-TR')}</span>
+                        <span>{new Date(post.date).toLocaleDateString("tr-TR")}</span>
                       </div>
                       <div className="flex items-center gap-1">
                         <Clock className="h-3 w-3" />
@@ -201,18 +153,18 @@ export default function BlogPage() {
                       </div>
                     </div>
 
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                    <h3 className="text-xl font-bold mb-3 text-[var(--ink)] font-[family-name:var(--font-display)] group-hover:text-[var(--brand-warm)] transition-colors line-clamp-2">
                       {post.title}
                     </h3>
-                    
-                    <p className="text-muted-foreground text-sm text-pretty mb-4 line-clamp-3">
+
+                    <p className="text-[var(--ink-muted)] text-sm mb-4 line-clamp-3">
                       {post.excerpt}
                     </p>
 
-                    <div className="flex items-center text-primary font-medium text-sm">
-                      Devamını Oku
-                      <ArrowRight className="h-4 w-4 ml-2 group-hover:ml-3 transition-all" />
-                    </div>
+                    <span className="inline-flex items-center text-[var(--ink)] font-medium text-sm">
+                      Devamını oku
+                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </span>
                   </CardContent>
                 </Card>
               </Link>
