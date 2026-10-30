@@ -37,8 +37,8 @@ export default function EkosistemPage() {
             href="/igkfast"
             className="group border border-[var(--border-soft)] p-8 md:p-10 hover:border-[var(--brand-warm)] transition-colors"
           >
-            <div className="flex items-center justify-center h-24 bg-black mb-6">
-              <img src="/logos/igkfast-logo.svg" alt="IGKfast" className="max-h-12 object-contain" />
+            <div className="flex items-center justify-center h-24 bg-white border border-[var(--border-soft)] mb-6">
+              <img src="/logos/igkfast-logo-591.png" alt="IGKfast" className="max-h-12 object-contain" />
             </div>
             <p className="text-xs uppercase tracking-[0.16em] text-[var(--ink-muted)] mb-2">
               SaaS · Tech Provider

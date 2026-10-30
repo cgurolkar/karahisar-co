@@ -11,8 +11,8 @@ const brands = [
     domain: "igkfast.com",
     title: "Yeni Nesil E-Ticaret SaaS Altyapısı",
     body: "Odak ürünümüz. Dijitalde satış yapmak ve ölçeklenmek isteyen işletmeler için yüksek performanslı, kesintisiz, güvenli ve modern SaaS tabanlı e-ticaret altyapısı geliştiriyoruz.",
-    logo: "/logos/igkfast-logo.svg",
-    logoBg: "bg-black",
+    logo: "/logos/igkfast-logo-591.png",
+    logoBg: "bg-white border border-[var(--border-soft)]",
   },
   {
     name: "IGK Yapı",
@@ -77,8 +77,8 @@ export default function AboutPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Hakkımızda</span>
           </div>
-          <div className="mb-6 inline-flex items-center bg-black/80 border border-white/10 px-5 py-3">
-            <img src="/logos/igkfast-logo.svg" alt="IGKfast" className="h-7 w-auto object-contain" />
+          <div className="mb-6 inline-flex items-center bg-white px-5 py-3">
+            <img src="/logos/igkfast-logo-591.png" alt="IGKfast" className="h-7 w-auto object-contain" />
           </div>
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--brand-warm)] mb-4">
             Karahisarlıoğlu Yapı Tasarım

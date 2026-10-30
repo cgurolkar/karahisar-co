@@ -12,7 +12,7 @@ const sisterCompanies = [
     id: 1,
     name: "IGKfast",
     category: "Teknoloji & Yazılım",
-    logo: "/logos/igkfast-logo.svg",
+    logo: "/logos/igkfast-logo-591.png",
     url: "https://igkfast.com",
     description: "Yazılım geliştirme, web tasarımı ve dijital tasarım çözümleri sunan teknoloji firmamız. Modern web uygulamaları, mobil çözümler ve kurumsal yazılım projeleri geliştirmektedir.",
     established: "Teknoloji grubu",
@@ -248,7 +248,7 @@ export default function PartnersPage() {
                 <CardContent className="p-8 text-center">
                   <div
                     className={`mb-6 rounded-lg p-4 shadow-sm flex items-center justify-center min-h-[104px] ${
-                      company.id === 1 ? "bg-black" : "bg-white"
+                      "bg-white"
                     }`}
                   >
                     <img

@@ -57,9 +57,9 @@ export default function IgkfastPage() {
           </p>
           <div className="grid items-end gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <div className="mb-6 inline-flex items-center bg-black px-5 py-3">
+              <div className="mb-6 inline-flex items-center bg-white border border-[var(--border-soft)] px-5 py-3">
                 <img
-                  src="/logos/igkfast-logo.svg"
+                  src="/logos/igkfast-logo-591.png"
                   alt="IGKfast"
                   className="h-8 w-auto object-contain"
                 />

@@ -60,9 +60,9 @@ export default function HomePage() {
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-28">
           <div className="animate-hero-in max-w-3xl">
-            <div className="mb-8 inline-flex items-center bg-black/80 border border-white/10 px-5 py-3">
+            <div className="mb-8 inline-flex items-center bg-white px-5 py-3">
               <img
-                src="/logos/igkfast-logo.svg"
+                src="/logos/igkfast-logo-591.png"
                 alt="IGKfast"
                 className="h-7 w-auto object-contain"
               />

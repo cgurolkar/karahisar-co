@@ -14,12 +14,11 @@ export const ecosystemCompanies: EcosystemCompany[] = [
     id: 1,
     name: "IGKfast",
     category: "E-ticaret SaaS",
-    logo: "/logos/igkfast-logo.svg",
+    logo: "/logos/igkfast-logo-591.png",
     url: "https://igkfast.com",
     tagline: "E-ticaret altyapısı",
     description:
       "Markaların kendi mağazalarını hızlıca kurmasına olanak tanıyan e-ticaret SaaS platformumuz. Sipariş, katalog ve ödeme süreçlerini tek yerden yönetin.",
-    darkLogo: true,
   },
   {
     id: 2,
