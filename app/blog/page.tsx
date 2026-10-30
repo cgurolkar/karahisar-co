@@ -33,14 +33,13 @@ export default function BlogPage() {
             <span className="text-[var(--ink)]">Blog</span>
           </div>
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--brand-warm)] mb-3">
-            İçgörü & rehber
+            Yazılım & ürün
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-[var(--ink)] font-[family-name:var(--font-display)] max-w-3xl text-balance">
             Blog
           </h1>
           <p className="mt-4 text-lg text-[var(--ink-muted)] max-w-2xl">
-            E-ticaret SaaS, banyo çözümleri ve dijital dönüşüm — markalarımız ve sektör için
-            uygulanabilir içerikler.
+            IGKfast, e-ticaret SaaS ve dijital büyüme — teknoloji odaklı, uygulanabilir içerikler.
           </p>
         </div>
       </section>

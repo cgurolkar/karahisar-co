@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
     metaDescription:
       "IGKfast e-ticaret SaaS altyapısı nedir? Tema, eklenti, sipariş ve ölçüm araçlarıyla işletmelere nasıl değer kattığını keşfedin.",
     content: `
-      <p>Dijitalde satış yapmak isteyen markalar için kritik soru nettir: Mağazayı sıfırdan mı kodlayacaksınız, yoksa güvenilir bir <strong>e-ticaret SaaS altyapısı</strong> mı kullanacaksınız? Karahisarlıoğlu Yapı Tasarım bünyesindeki <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">IGKfast</a>, ikinci yolu seçen işletmeler için geliştirilmiş çok kiracılı bir platformdur.</p>
+      <p>Dijitalde satış yapmak isteyen markalar için kritik soru nettir: Mağazayı sıfırdan mı kodlayacaksınız, yoksa güvenilir bir <strong>e-ticaret SaaS altyapısı</strong> mı kullanacaksınız? Karahisarlıoğlu Yapı Tasarım’ın teknoloji ürünü <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">IGKfast</a>, ikinci yolu seçen işletmeler için geliştirilmiş çok kiracılı bir platformdur.</p>
 
       <h2>SaaS e-ticaret altyapısı ne işe yarar?</h2>
       <p>IGKfast ile her işletme kendi mağazasını yönetir: katalog, sipariş, müşteri, kampanya, tema ve eklentiler tek panelde toplanır. Bu model; yazılım ekibi kurmadan, yüksek performanslı ve güncellenen bir altyapıyla satışa başlamanızı sağlar.</p>
@@ -47,95 +47,24 @@ export const blogPosts: BlogPost[] = [
       <ul>
         <li>Diğer işletmelere hizmet veren <strong>Tech Provider</strong> konumundaki SaaS ürün</li>
         <li>Kesintisiz, güvenli ve modern mimari yaklaşım</li>
-        <li>İnşaat mühendisliği disiplininden gelen “sağlam zemin” anlayışı</li>
+        <li>Ölçeklenebilir çok kiracılı e-ticaret altyapısı</li>
       </ul>
 
-      <p>Detaylı ürün bilgisi, demo ve başvuru için <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">igkfast.com</a> adresini ziyaret edin. Holding sitemizdeki özet için <a href="/igkfast">IGKfast sayfamıza</a> da bakabilirsiniz.</p>
+      <p>Detaylı ürün bilgisi, demo ve başvuru için <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">igkfast.com</a> adresini ziyaret edin. Holding sitemizdeki özet için <a href="/igkfast">IGKfast sayfamıza</a> bakabilirsiniz.</p>
     `,
   },
   {
     id: 2,
-    slug: "banyo-aksesuarlari-ve-armatur-secimi",
-    title: "Banyo Aksesuarı, Duş ve Batarya Seçerken Nelere Dikkat Etmelisiniz?",
-    excerpt:
-      "Islak zeminlerde dayanıklılık ve zarafeti dengeleyen ürün seçimi: IGK Yapı ve Banyolia perspektifinden pratik bir rehber.",
-    image: "/hero-karahisarlioglu-2.jpg",
-    category: "Banyo & Tasarım",
-    author: "Karahisarlıoğlu Yapı Tasarım",
-    date: "2026-10-18",
-    readTime: "6 dk",
-    featured: true,
-    metaDescription:
-      "Banyo aksesuarı, duş sistemi ve batarya seçiminde dikkat edilecekler. IGK Yapı ve Banyolia mağazalarımızdan ilham alan rehber.",
-    content: `
-      <p>Modern yaşam alanlarında ıslak zeminler hem teknik hem estetik açıdan kritiktir. Yanlış armatür veya zayıf aksesuar, kısa sürede bakım ve konfor kaybına yol açar. <strong>Karahisarlıoğlu Yapı Tasarım</strong> olarak sahadaki mühendislik birikimimizi <a href="https://www.igkyapi.com.tr" target="_blank" rel="noopener noreferrer">igkyapi.com.tr</a> ve <a href="https://banyolia.com" target="_blank" rel="noopener noreferrer">banyolia.com</a> mağazalarımızda ürün seçkisine taşıyoruz.</p>
-
-      <h2>1. Kullanım yoğunluğuna göre malzeme</h2>
-      <p>Yoğun kullanılan banyolarda kaplama kalitesi, korozyon dayanımı ve yedek parça bulunabilirliği öne çıkar. Lüks görünüm kadar uzun ömürlü yüzey ve montaj uyumu da önemlidir.</p>
-
-      <h2>2. Duş sistemlerinde basınç ve konfor</h2>
-      <p>Fonksiyonel duş sistemlerinde su basıncı, termostatik kontrol ve kolay temizlik detayları konforu belirler. Projeye uygun boyut ve montaj tipi seçilmelidir.</p>
-
-      <h2>3. Batarya ve muslukta tasarım + servis</h2>
-      <p>Zamansız çizgiler, kartuş kalitesi ve servis ağı; hem ev hem ticari projelerde fark yaratır. Estetik tercihleri teknik şartname ile birlikte değerlendirin.</p>
-
-      <h2>4. Aksesuarlarda detay şıklığı</h2>
-      <p>Banyolia yaklaşımıyla banyoyu yalnızca kullanım alanı değil; konfor ve huzur noktası olarak düşünüyoruz. Fonksiyonel dekorasyon ve sıcak çizgiler, mekâna değer katar.</p>
-
-      <p>Ürünleri incelemek için <a href="/magazalar">mağazalar sayfamızı</a> ziyaret edebilir; IGK Yapı ve Banyolia vitrinlerine doğrudan gidebilirsiniz.</p>
-    `,
-  },
-  {
-    id: 3,
-    slug: "gelecegi-insa-ediyor-dijital-dunayi-tasarliyoruz",
-    title: "Geleceği İnşa Ediyor, Dijital Dünyayı Tasarlıyoruz",
-    excerpt:
-      "35 yıllık inşaat mühendisliği tecrübesini yazılım, e-ticaret ve mekan tasarımıyla birleştiren dönüşüm hikâyemiz.",
-    image: "/hero-karahisarlioglu-1.jpg",
-    category: "Kurumsal",
-    author: "C. Gürol Karahisarlıoğlu",
-    date: "2026-10-15",
-    readTime: "5 dk",
-    featured: false,
-    metaDescription:
-      "Karahisarlıoğlu Yapı Tasarım: inşaattan IGKfast, IGK Yapı ve Banyolia ekosistemine uzanan dijital dönüşüm vizyonu.",
-    content: `
-      <p><strong>Karahisarlıoğlu Yapı Tasarım Ltd. Şti.</strong> olarak temellerimizi inşaat mühendisliği alanındaki 35 yılı aşkın köklü tecrübe, disiplin ve güven vizyonu üzerine kurduk. Sahadaki fiziki yapı üretiminde edindiğimiz mühendislik hassasiyetini; yazılım, e-ticaret altyapıları ve modern mekan tasarımıyla birleştirerek kapsamlı bir dönüşüm ekosistemine dönüştürdük.</p>
-
-      <h2>Üç marka, tek vizyon</h2>
-      <p>Fiziksel alanların inşasından dijital altyapıların mimarisine uzanan yolculukta kaliteyi, estetiği ve teknolojiyi üç ana marka çatısı altında buluşturuyoruz:</p>
-      <ul>
-        <li><strong>IGK Yapı</strong> — ıslak zeminlerde lüks malzeme, duş ve batarya çözümleri</li>
-        <li><strong>Banyolia</strong> — yaşam alanlarına değer katan banyo aksesuarları</li>
-        <li><strong>IGKfast</strong> — yeni nesil e-ticaret SaaS altyapısı</li>
-      </ul>
-
-      <h2>Değerlerimiz</h2>
-      <p><strong>Mühendislik disiplini:</strong> Sağlam zemin ve sıfır hata anlayışını hem banyo mimarisine hem yazılım koduna entegre ediyoruz.</p>
-      <p><strong>Tasarım ve estetik:</strong> İşlevsel olduğu kadar göze hitap eden, zamansız çözümler üretiyoruz.</p>
-      <p><strong>Yenilikçi teknoloji:</strong> Geleneksel ticaret ile dijital SaaS modellerini harmanlıyoruz.</p>
-      <p><strong>Koşulsuz güven:</strong> 35 yıllık mirasın sorumluluğuyla şeffaf ve sürdürülebilir ilişkiler kuruyoruz.</p>
-
-      <blockquote>
-        <p>“Her proje sağlam bir vizyonla başlar. İster hayalinizdeki evi dekore ediyor olun, ister dijitalde geleceğinizi inşa ediyor olun; mühendislik bilgimiz, tasarım tutkumuz ve teknolojik çözümlerimizle yanınızdayız.”</p>
-        <p><em>— C. Gürol Karahisarlıoğlu, Şirket Ortağı / Genel Müdür</em></p>
-      </blockquote>
-
-      <p>Daha fazlası için <a href="/hakkimizda">hakkımızda</a> sayfamızı okuyabilirsiniz.</p>
-    `,
-  },
-  {
-    id: 4,
     slug: "eticaret-altyapisi-nasil-secilir",
     title: "E-Ticaret Altyapısı Nasıl Seçilir? 2026 İçin Pratik Kontrol Listesi",
     excerpt:
-      "Tema, ödeme, entegrasyon, güvenlik ve ölçeklenebilirlik: doğru SaaS veya e-ticaret altyapısını seçerken bakmanız gerekenler.",
+      "Tema, ödeme, entegrasyon, güvenlik ve ölçeklenebilirlik: doğru SaaS e-ticaret altyapısını seçerken bakmanız gerekenler.",
     image: "/media/igkfast/plugins.png",
     category: "Yazılım & SaaS",
     author: "Karahisarlıoğlu Yapı Tasarım",
-    date: "2026-10-12",
+    date: "2026-10-18",
     readTime: "8 dk",
-    featured: false,
+    featured: true,
     metaDescription:
       "E-ticaret altyapısı seçim rehberi: performans, tema, eklenti, Google/Meta ölçüm ve güvenlik kriterleri. IGKfast perspektifi.",
     content: `
@@ -154,38 +83,98 @@ export const blogPosts: BlogPost[] = [
       <p>Google Analytics, Ads, Tag Manager, Merchant Center ve reklam platformlarıyla uyum; veriye dayalı büyüme için kritiktir. Tech Provider konumundaki platformlar bu entegrasyonları bilinçli sunar.</p>
 
       <h2>5. Güvenlik ve sürdürülebilirlik</h2>
-      <p>SSL, yedekleme, güncelleme politikası ve veri gizliliği (aydınlatma / gizlilik metinleri) şeffaf olmalıdır.</p>
+      <p>SSL, yedekleme, güncelleme politikası ve veri gizliliği şeffaf olmalıdır.</p>
 
       <p>IGKfast’i incelemek için <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">igkfast.com</a> ve sitemizdeki <a href="/igkfast">ürün özeti</a> iyi bir başlangıç noktasıdır.</p>
     `,
   },
   {
-    id: 5,
-    slug: "muhendislik-disiplini-ve-dijital-urunler",
-    title: "Mühendislik Disiplini Dijital Ürünlere Nasıl Taşınır?",
+    id: 3,
+    slug: "cok-kiracili-saas-eticaret",
+    title: "Çok Kiracılı SaaS E-Ticaret: Neden Tek Kod Tabanı, Birçok Mağaza?",
     excerpt:
-      "Sağlam zemin ve sıfır hata yaklaşımının banyo ürünleri ile yazılım mimarisinde nasıl karşılık bulduğunu anlatıyoruz.",
+      "Multi-tenant mimari e-ticarette ne kazandırır? IGKfast’in her işletmeye ayrı mağaza sunarken altyapıyı nasıl ortak yönettiğini anlatıyoruz.",
     image: "/media/igkfast/orders-map.png",
-    category: "Vizyon",
-    author: "C. Gürol Karahisarlıoğlu",
-    date: "2026-10-08",
+    category: "Teknoloji",
+    author: "Karahisarlıoğlu Yapı Tasarım",
+    date: "2026-10-15",
+    readTime: "6 dk",
+    featured: false,
+    metaDescription:
+      "Çok kiracılı (multi-tenant) SaaS e-ticaret mimarisi nedir? IGKfast ile mağaza izolasyonu ve ortak altyapı avantajları.",
+    content: `
+      <p><strong>Çok kiracılı SaaS</strong>, aynı yazılım ürününün birçok bağımsız işletmeye hizmet vermesidir. Her kiracı kendi kataloğunu, siparişlerini ve markasını yönetir; altyapı, güvenlik yamaları ve yeni özellikler merkezî olarak gelir.</p>
+
+      <h2>Tek ürün, birçok mağaza</h2>
+      <p>IGKfast bu modeli e-ticarete uygular: işletmeler kendi vitrinlerini açar, biz platformu geliştirir ve işletiriz. Böylece her markanın ayrı bir yazılım projesi kurmasına gerek kalmaz.</p>
+
+      <h2>Operasyonel avantajlar</h2>
+      <ul>
+        <li>Ortak güncelleme ve güvenlik politikası</li>
+        <li>Tema ve eklenti ekosisteminin tüm kiracılara yayılması</li>
+        <li>Ölçüm ve pazarlama araçlarının standartlaşması</li>
+      </ul>
+
+      <h2>Kimler için uygun?</h2>
+      <p>Hızlı yayına almak, kendi sunucu ekibini büyütmeden ölçeklemek ve modern bir panel deneyimi isteyen perakende ve B2B markaları için uygundur.</p>
+
+      <p>Daha fazla teknik özet için <a href="/igkfast">IGKfast ürün sayfasına</a> göz atın.</p>
+    `,
+  },
+  {
+    id: 4,
+    slug: "google-marketing-tools-eticaret",
+    title: "E-Ticarette Google Marketing Tools: Ölçümden Reklama Tek Hat",
+    excerpt:
+      "Analytics, Ads, Tag Manager ve Merchant Center’ı e-ticaret SaaS’e bağlamak neden kritik? IGKfast yaklaşımını özetledik.",
+    image: "/media/igkfast/plugins.png",
+    category: "Pazarlama Teknolojisi",
+    author: "Karahisarlıoğlu Yapı Tasarım",
+    date: "2026-10-12",
     readTime: "5 dk",
     featured: false,
     metaDescription:
-      "İnşaat mühendisliği disiplinini e-ticaret SaaS ve banyo çözümlerine taşıyan Karahisarlıoğlu yaklaşımı.",
+      "E-ticaret SaaS’te Google Analytics, Ads, Tag Manager ve Merchant Center entegrasyonu. IGKfast Marketing Tools özeti.",
     content: `
-      <p>İnşaatın temel kuralı nettir: <strong>sağlam zemin</strong> ve ölçülebilir kalite. Aynı ilkeyi dijital ürünlerde “kararlı altyapı, test edilebilir kod ve şeffaf operasyon” olarak okuyoruz.</p>
+      <p>Modern e-ticarette satış yalnızca vitrinle bitmez; <strong>ölçüm ve reklam</strong> hattı dönüşümü belirler. Google ekosistemi — Analytics, Ads, Tag Manager, Merchant Center — doğru bağlandığında kampanya ve katalog verisi aynı dilde konuşur.</p>
 
-      <h2>Fiziksel üründe disiplin</h2>
-      <p>IGK Yapı ve Banyolia seçkilerinde dayanıklılık, montaj uyumu ve estetik bir arada düşünülür. Detaylara hâkimiyet, sahada yıllarca süren uygulama deneyiminden gelir.</p>
+      <h2>Neden platform seviyesinde entegrasyon?</h2>
+      <p>Her mağazanın ayrı ayrı etiket ve feed kurması maliyetlidir. SaaS tarafında hazır Marketing Tools modülleri, kiracıların daha hızlı ve tutarlı ölçüm kurmasını sağlar.</p>
 
-      <h2>Yazılımda disiplin</h2>
-      <p>IGKfast’te çok kiracılı mimari, panel modülleri ve entegrasyonlar; kesintisiz satış için tasarlanır. Hata toleransı düşük operasyonlarda güvenilirlik, pazarlama vaadinden önce gelir.</p>
+      <h2>IGKfast’te ne sunuluyor?</h2>
+      <p>Eklenti paneli üzerinden Google araçlarına yönelik bağlantılar kurulabilir; böylece pazarlama ekibi teknik borç biriktirmeden ilerler. Tech Provider konumumuz, diğer işletmelerin reklam ve ölçüm ihtiyaçlarına altyapı desteği vermeyi de kapsar.</p>
 
-      <h2>Güven bağı</h2>
-      <p>35 yılı aşkın sektörel miras; iş ortakları ve müşterilerle şeffaf, sürdürülebilir ilişkiler kurma sorumluluğunu beraberinde getirir. Bu sorumluluk hem mağaza hem SaaS hattında geçerlidir.</p>
+      <p>Ürün demosu ve detay için <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">igkfast.com</a>.</p>
+    `,
+  },
+  {
+    id: 5,
+    slug: "teknoloji-odakli-yazilim-grubu",
+    title: "Teknoloji Odaklı Bir Yazılım Grubu: IGKfast’i Neden Öne Çıkarıyoruz?",
+    excerpt:
+      "Karahisarlıoğlu Yapı Tasarım’ın ürün stratejisi net: e-ticaret SaaS. IGKfast neden markanın merkezinde?",
+    image: "/media/igkfast/theme-store.png",
+    category: "Kurumsal",
+    author: "C. Gürol Karahisarlıoğlu",
+    date: "2026-10-08",
+    readTime: "4 dk",
+    featured: false,
+    metaDescription:
+      "Karahisarlıoğlu Yapı Tasarım’ın teknoloji odaklı vizyonu ve IGKfast e-ticaret SaaS ürününün merkezî rolü.",
+    content: `
+      <p>Bugün Karahisarlıoğlu Yapı Tasarım’ı bir <strong>teknoloji şirketi</strong> olarak konumlandırıyoruz. Odak ürünümüz <a href="https://igkfast.com" target="_blank" rel="noopener noreferrer">IGKfast</a>: diğer işletmelere e-ticaret SaaS altyapısı sunan yazılım platformu.</p>
 
-      <p>Vizyonumuzu <a href="/hakkimizda">hakkımızda</a> sayfasında, ürünleri ise <a href="/igkfast">IGKfast</a> ve <a href="/magazalar">mağazalar</a> sayfalarında bulabilirsiniz.</p>
+      <h2>Ürün önceliği</h2>
+      <p>Yazılım yol haritası, performans, güvenlik ve entegrasyonlar — bunlar ana gündemimiz. Dijital mağaza markalarımız (IGK Yapı, Banyolia) aynı ekosistem içinde büyür; ancak dışarıya anlattığımız asıl değer IGKfast’tir.</p>
+
+      <h2>Ne vaat ediyoruz?</h2>
+      <ul>
+        <li>Ölçeklenebilir mağaza altyapısı</li>
+        <li>Tema, eklenti ve ölçüm araçları</li>
+        <li>Şeffaf iş ortaklığı ve sürekli ürün geliştirme</li>
+      </ul>
+
+      <p>Şirket özeti için <a href="/hakkimizda">hakkımızda</a>, ürün için <a href="/igkfast">IGKfast</a> sayfalarına bakabilirsiniz.</p>
     `,
   },
 ]
@@ -193,9 +182,9 @@ export const blogPosts: BlogPost[] = [
 export const blogCategories = [
   "Tümü",
   "Yazılım & SaaS",
-  "Banyo & Tasarım",
+  "Teknoloji",
+  "Pazarlama Teknolojisi",
   "Kurumsal",
-  "Vizyon",
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {

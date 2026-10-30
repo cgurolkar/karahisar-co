@@ -16,9 +16,13 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: "Karahisarlıoğlu Yapı Tasarım | Yazılım ve E-ticaret Ekosistemi",
+  title: "Karahisarlıoğlu Yapı Tasarım | IGKfast E-ticaret SaaS",
   description:
-    "Karahisarlıoğlu Yapı Tasarım: IGKfast e-ticaret SaaS, IGK Yapı ve Banyolia mağazaları ile yazılım ve perakende ekosistemi.",
+    "Karahisarlıoğlu Yapı Tasarım — IGKfast ile e-ticaret SaaS altyapısı. Teknoloji odaklı yazılım ve dijital mağaza ekosistemi.",
+  icons: {
+    icon: [{ url: "/favicon.ico", sizes: "any" }],
+    shortcut: "/favicon.ico",
+  },
   generator: "v0.app",
 }
 

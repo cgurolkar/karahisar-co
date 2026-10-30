@@ -12,7 +12,6 @@ export function Navigation() {
     { href: "/", label: "Ana Sayfa" },
     { href: "/igkfast", label: "IGKfast" },
     { href: "/magazalar", label: "Mağazalar" },
-    { href: "/referanslar", label: "Referanslar" },
     { href: "/hakkimizda", label: "Hakkımızda" },
     { href: "/blog", label: "Blog" },
     { href: "/iletisim", label: "İletişim" },

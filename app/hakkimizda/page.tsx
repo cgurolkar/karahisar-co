@@ -5,12 +5,22 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 
 const brands = [
   {
+    name: "IGKfast",
+    href: "https://igkfast.com",
+    local: "/igkfast",
+    domain: "igkfast.com",
+    title: "Yeni Nesil E-Ticaret SaaS Altyapısı",
+    body: "Odak ürünümüz. Dijitalde satış yapmak ve ölçeklenmek isteyen işletmeler için yüksek performanslı, kesintisiz, güvenli ve modern SaaS tabanlı e-ticaret altyapısı geliştiriyoruz.",
+    logo: "/logos/igkfast-logo.svg",
+    logoBg: "bg-black",
+  },
+  {
     name: "IGK Yapı",
     href: "https://www.igkyapi.com.tr",
     local: "/magazalar",
     domain: "igkyapi.com.tr",
-    title: "Yapı ve Banyo Çözümlerinde Güvenilir Mühendislik",
-    body: "Modern yaşam alanlarının en kritik noktası olan ıslak zeminlerde; lüks banyo malzemeleri, fonksiyonel duş sistemleri ve batarya/musluk çözümleri sunuyoruz. Sahadan gelen mühendislik bilgimizle dayanıklılığı, modern mimari trendlerle zarafeti harmanlayarak projelere değer katıyoruz.",
+    title: "Dijital perakende — yapı ve banyo",
+    body: "Lüks banyo malzemeleri, duş sistemleri ve batarya çözümlerini online mağaza deneyimiyle sunuyoruz.",
     logo: "/logos/igkyapi-logo.png",
     logoBg: "bg-[var(--surface-elevated)]",
   },
@@ -19,39 +29,29 @@ const brands = [
     href: "https://banyolia.com",
     local: "/magazalar",
     domain: "banyolia.com",
-    title: "Yaşam Alanlarına Değer Katan Estetik Dokunuşlar",
-    body: "Banyoları sadece birer kullanım alanı değil, birer konfor ve huzur noktası olarak tasarlıyoruz. Detaylardaki şıklığa, fonksiyonel dekorasyona ve sıcak çizgilere odaklanan seçkin banyo aksesuarları koleksiyonlarımızla evlere zarafet taşıyoruz.",
+    title: "Dijital perakende — banyo aksesuarı",
+    body: "Seçkin banyo aksesuarları koleksiyonlarıyla yaşam alanlarına değer katan e-ticaret markamız.",
     logo: "/logos/banyolia-logo.png",
     logoBg: "bg-[var(--surface-elevated)]",
-  },
-  {
-    name: "IGKfast",
-    href: "https://igkfast.com",
-    local: "/igkfast",
-    domain: "igkfast.com",
-    title: "Yeni Nesil E-Ticaret ve SaaS Altyapısı",
-    body: "İnşaatta gösterdiğimiz sağlam temel yaklaşımını yazılım mimarisine taşıdık. Dijital dünyada satış yapmak ve ölçeklenmek isteyen işletmeler için yüksek performanslı, kesintisiz, güvenli ve modern SaaS tabanlı e-ticaret altyapı çözümleri geliştiriyoruz.",
-    logo: "/logos/igkfast-logo.svg",
-    logoBg: "bg-black",
   },
 ]
 
 const values = [
   {
-    title: "Mühendislik Disiplini",
-    body: 'İnşaatın temel kuralı olan "sağlam zemin ve sıfır hata" anlayışını hem banyo mimarisine hem de geliştirdiğimiz yazılım kodlarına entegre ediyoruz.',
+    title: "Ürün disiplini",
+    body: "Stabil altyapı, test edilebilir kod ve ölçülebilir kalite — IGKfast’te her sürümde aynı standart.",
   },
   {
-    title: "Tasarım ve Estetik",
-    body: "Sadece işlevsel değil; göze hitap eden, zamansız ve modern yaşam biçimlerini destekleyen ürün ve arayüzler üretiyoruz.",
+    title: "Tasarım ve deneyim",
+    body: "İşlevsel olduğu kadar net, modern arayüzler ve vitrin deneyimleri üretiyoruz.",
   },
   {
-    title: "Yenilikçi Teknoloji",
-    body: "Geleneksel ticaret ile dijital SaaS modellerini harmanlayarak müşterilerimize geleceğe hazır çözümler sunuyoruz.",
+    title: "Yenilikçi teknoloji",
+    body: "SaaS, entegrasyonlar ve pazarlama araçlarıyla işletmelerin dijital satışını hızlandırıyoruz.",
   },
   {
-    title: "Koşulsuz Güven",
-    body: "35 yılı aşkın sektörel mirasımızın bize yüklediği sorumlulukla, tüm iş ortaklarımız ve müşterilerimizle şeffaf ve sürdürülebilir bağlar kuruyoruz.",
+    title: "Şeffaf ortaklık",
+    body: "İş ortaklarımız ve müşterilerimizle sürdürülebilir, açık ilişkiler kuruyoruz.",
   },
 ]
 
@@ -60,14 +60,14 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[var(--surface)]">
       <Navigation />
 
-      {/* Full-bleed hero with image #2 */}
       <section className="relative min-h-[70svh] flex items-end overflow-hidden border-b border-[var(--border-soft)]">
+        <div className="absolute inset-0 bg-[#0c0f14]" aria-hidden />
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero-karahisarlioglu-2.jpg')" }}
+          className="absolute inset-0 opacity-40 bg-cover bg-center"
+          style={{ backgroundImage: "url('/media/igkfast/banner1.png')" }}
           aria-hidden
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--ink)] via-[var(--ink)]/70 to-[var(--ink)]/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0c0f14] via-[#0c0f14]/85 to-[#0c0f14]/40" />
 
         <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-32">
           <div className="flex items-center text-sm text-white/70 mb-6">
@@ -77,15 +77,18 @@ export default function AboutPage() {
             <span className="mx-2">/</span>
             <span className="text-white">Hakkımızda</span>
           </div>
+          <div className="mb-6 inline-flex items-center bg-black/80 border border-white/10 px-5 py-3">
+            <img src="/logos/igkfast-logo.svg" alt="IGKfast" className="h-7 w-auto object-contain" />
+          </div>
           <p className="text-sm font-medium tracking-[0.2em] uppercase text-[var(--brand-warm)] mb-4">
             Karahisarlıoğlu Yapı Tasarım
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white font-[family-name:var(--font-display)] max-w-4xl text-balance leading-[1.08]">
-            Geleceği İnşa Ediyor, Dijital Dünyayı Tasarlıyoruz
+            Teknoloji odaklı yazılım grubu
           </h1>
           <p className="mt-5 text-lg text-white/85 max-w-2xl leading-relaxed">
-            35 yılı aşkın inşaat mühendisliği tecrübesini yazılım, e-ticaret ve modern mekan
-            tasarımıyla birleştiren dönüşüm ekosistemi.
+            IGKfast e-ticaret SaaS platformu ve dijital mağaza markalarıyla işletmelerin satış
+            altyapısını geliştiriyoruz.
           </p>
         </div>
       </section>
@@ -94,24 +97,23 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-7">
             <h2 className="text-3xl font-bold text-[var(--ink)] font-[family-name:var(--font-display)] mb-6 text-balance">
-              Köklü tecrübe, kapsamlı dönüşüm
+              Yazılım ürünü merkezde
             </h2>
             <p className="text-[var(--ink-muted)] leading-relaxed mb-5">
-              Karahisarlıoğlu Yapı Tasarım Ltd. Şti. olarak, temellerimizi inşaat mühendisliği
-              alanındaki 35 yılı aşkın köklü tecrübe, disiplin ve güven vizyonu üzerine kurduk.
-              Sahadaki fiziki yapı üretiminde edindiğimiz mühendislik hassasiyetini, günümüzün
-              hızla dijitalleşen dünyasında yazılım, e-ticaret altyapıları ve modern mekan
-              tasarımıyla birleştirerek kapsamlı bir dönüşüm ekosistemine dönüştürdük.
+              Karahisarlıoğlu Yapı Tasarım Ltd. Şti. olarak odağımız teknolojidir. Ana ürünümüz{" "}
+              <strong className="text-[var(--ink)]">IGKfast</strong>; diğer işletmelere e-ticaret
+              SaaS altyapısı sunar. Kaliteyi, estetiği ve ölçeklenebilir mimariyi aynı ürün
+              çatısı altında birleştiriyoruz.
             </p>
             <p className="text-[var(--ink-muted)] leading-relaxed mb-8">
-              Fiziksel alanların inşasından dijital altyapıların mimarisine uzanan bu yolculukta;
-              kaliteyi, estetiği ve teknolojiyi üç ana markamız çatısı altında bir araya getiriyoruz.
+              IGK Yapı ve Banyolia, grubumuzun kendi e-ticaret kanallarıdır; dışarıya anlattığımız
+              asıl değer ise IGKfast platformudur.
             </p>
             <ul className="space-y-3">
               {[
-                "IGK Yapı — ıslak zemin ve armatür çözümleri",
-                "Banyolia — seçkin banyo aksesuarları",
-                "IGKfast — SaaS e-ticaret altyapısı",
+                "IGKfast — e-ticaret SaaS (odak ürün)",
+                "IGK Yapı & Banyolia — dijital mağazalar",
+                "Tema, eklenti ve ölçüm ekosistemi",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[var(--ink)]">
                   <CheckCircle className="h-5 w-5 text-[var(--brand-warm)] shrink-0 mt-0.5" />
@@ -121,11 +123,11 @@ export default function AboutPage() {
             </ul>
           </div>
           <div className="lg:col-span-5">
-            <div className="aspect-[4/5] overflow-hidden bg-[var(--surface-elevated)]">
+            <div className="aspect-[4/5] overflow-hidden bg-[#0c0f14] border border-[var(--border-soft)]">
               <img
-                src="/hero-karahisarlioglu-2.jpg"
-                alt="Karahisarlıoğlu Yapı Tasarım — vizyon"
-                className="w-full h-full object-cover"
+                src="/media/igkfast/banner1.png"
+                alt="IGKfast platform"
+                className="w-full h-full object-cover object-top"
               />
             </div>
           </div>
@@ -139,20 +141,14 @@ export default function AboutPage() {
               Markalarımız
             </p>
             <h2 className="text-3xl font-bold text-[var(--ink)] font-[family-name:var(--font-display)] text-balance">
-              Faaliyet alanlarımız
+              Ürün ve kanallar
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {brands.map((brand) => (
               <article key={brand.name} className="flex flex-col">
-                <div
-                  className={`flex items-center justify-center h-16 mb-5 px-4 ${brand.logoBg}`}
-                >
-                  <img
-                    src={brand.logo}
-                    alt={brand.name}
-                    className="max-h-10 object-contain"
-                  />
+                <div className={`flex items-center justify-center h-16 mb-5 px-4 ${brand.logoBg}`}>
+                  <img src={brand.logo} alt={brand.name} className="max-h-10 object-contain" />
                 </div>
                 <p className="text-xs tracking-wide uppercase text-[var(--brand-warm)] mb-2">
                   {brand.domain}
@@ -213,16 +209,15 @@ export default function AboutPage() {
       <section className="py-20 bg-[var(--ink)] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <blockquote className="text-2xl md:text-3xl font-medium leading-relaxed font-[family-name:var(--font-display)] mb-8 text-balance">
-            “Her proje sağlam bir vizyonla başlar. İster hayalinizdeki evi dekore ediyor olun, ister
-            dijitalde geleceğinizi inşa ediyor olun; mühendislik bilgimiz, tasarım tutkumuz ve
-            teknolojik çözümlerimizle yanınızdayız.”
+            “Dijitalde geleceğinizi inşa ederken yanınızdayız — mühendislik disiplini, ürün tutkusu
+            ve ölçeklenebilir teknolojiyle.”
           </blockquote>
           <cite className="not-italic block">
             <span className="text-[var(--brand-warm)] font-semibold tracking-wide">
               C. Gürol Karahisarlıoğlu
             </span>
             <span className="block mt-2 text-white/70 text-sm">
-              Şirket Ortağı — Genel Müdür / İnşaat Mühendisi
+              Şirket Ortağı — Genel Müdür
             </span>
             <span className="block mt-1 text-white/50 text-sm">
               Karahisarlıoğlu Yapı Tasarım Ltd. Şti.
@@ -235,10 +230,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
           <div>
             <h2 className="text-2xl font-bold text-[var(--ink)] font-[family-name:var(--font-display)] mb-2">
-              Birlikte geleceği inşa edelim
+              IGKfast’i konuşalım
             </h2>
             <p className="text-[var(--ink-muted)] max-w-xl">
-              Yazılım, mağaza veya proje danışmanlığı için bizimle iletişime geçin.
+              Demo, iş ortaklığı veya teknik sorularınız için bizimle iletişime geçin.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
@@ -250,10 +245,10 @@ export default function AboutPage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/blog"
+              href="/igkfast"
               className="inline-flex items-center gap-2 border border-[var(--border-soft)] text-[var(--ink)] px-6 py-3 text-sm font-semibold hover:border-[var(--brand-warm)] transition"
             >
-              Blog
+              IGKfast
             </Link>
           </div>
         </div>

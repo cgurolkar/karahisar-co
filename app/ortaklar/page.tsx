@@ -431,7 +431,8 @@ export default function PartnersPage() {
             <div>
               <h4 className="text-white font-semibold mb-4">İletişim</h4>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📞 +90 532 743 41 33</p>
+                <p>📞 0542 360 32 78</p>
+                <p>📞 0850 840 71 64</p>
                 <p>📧 info@karahisarliogluyapi.com.tr</p>
                 <p>📍 İlkbahar Mahallesi Güneypark Kümeevler Sinpaş Altınoran Çarşı 19/B -2. Bodrum Katı No:31 Çankaya/ANKARA</p>
               </div>

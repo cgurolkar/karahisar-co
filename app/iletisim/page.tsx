@@ -15,7 +15,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefon",
-    details: ["+90 532 743 41 33"],
+    details: ["0542 360 32 78", "0850 840 71 64"],
     description: "Pazartesi - Cuma: 08:00 - 18:00",
   },
   {

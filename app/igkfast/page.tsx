@@ -94,20 +94,24 @@ export default function IgkfastPage() {
                 </Link>
               </div>
             </div>
-            <div className="lg:col-span-5">
-              <div className="aspect-video overflow-hidden border border-[var(--border-soft)] bg-black">
-                <video
-                  className="h-full w-full object-cover"
-                  controls
-                  playsInline
-                  preload="metadata"
-                  poster="/media/igkfast/theme-store.png"
-                >
-                  <source src="/media/igkfast/presentation.mp4" type="video/mp4" />
-                  Tarayıcınız video etiketini desteklemiyor.
-                </video>
+            <div className="lg:col-span-5 flex flex-col items-center lg:items-end">
+              <div className="w-full max-w-[280px] sm:max-w-[320px]">
+                <div className="aspect-[9/16] overflow-hidden border border-[var(--border-soft)] bg-black shadow-[0_24px_60px_-28px_rgba(0,0,0,0.45)]">
+                  <video
+                    className="h-full w-full object-cover"
+                    controls
+                    playsInline
+                    preload="metadata"
+                    poster="/media/igkfast/banner1.png"
+                  >
+                    <source src="/media/igkfast/presentation.mp4" type="video/mp4" />
+                    Tarayıcınız video etiketini desteklemiyor.
+                  </video>
+                </div>
+                <p className="mt-2 text-xs text-[var(--ink-muted)] text-center">
+                  IGKfast ürün tanıtım videosu
+                </p>
               </div>
-              <p className="mt-2 text-xs text-[var(--ink-muted)]">IGKfast ürün tanıtım videosu</p>
             </div>
           </div>
         </div>
